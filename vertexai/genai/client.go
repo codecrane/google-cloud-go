@@ -53,7 +53,6 @@ func NewClient(ctx context.Context, projectID, location string, opts ...option.C
 	if err != nil {
 		return nil, err
 	}
-	c.SetGoogleClientInfo("gccl", internal.Version)
 	return &Client{
 		c:         c,
 		projectID: projectID,
